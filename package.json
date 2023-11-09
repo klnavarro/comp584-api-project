@@ -1,0 +1,17 @@
+{
+  "name": "comp584-api-project-kn",
+  "version": "1.0.0",
+  "description": "Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}

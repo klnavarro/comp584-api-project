@@ -1,0 +1,77 @@
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+  background-color:#3d6192;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color:;
+}
+
+div img {
+	width: 100%;
+	max-width: 150px; 
+}
+
+/* grid system -- mobile first! */
+/* flex contatiner */
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* attribute selector to give some margin between columns and apply styles to flex items */
+
+[class*="box"] {
+	margin-left: 4%;
+	flex: 0 0 92%;
+}
+
+/* Add background colors to see how much space each column is taking */
+
+.box {
+	background-color: #A3CDD9;
+}
+
+
+
+/* Tablet Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+	
+  .box {
+		flex: 0 0 44%;
+	}
+
+  
+
+}
+/* Desktop screen Sizes */
+@media only screen and (min-width: 850px) {
+  
+  
+	.box {
+		flex: 0 0 44%;
+    padding: 16px 16px 16px 16px;
+	}
+  
+
+}
